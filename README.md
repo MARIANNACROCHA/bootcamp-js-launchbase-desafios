@@ -1,4 +1,4 @@
-# bootcamp-js-launchbase-desafios-01
+# bootcamp-js-launchbase-desafios
 Desafios para fortalecer alguns conceitos no JS, entre eles:  Variáveis; Condicionais; Operadores.
 
 Olá pessoal. Seguem dois exercícios que realizei durante o início do Bootcamp LaunchBase na Rocketseat. Esses dois exercícios tratam dos primeiros conceitos em JS para iniciantes.
