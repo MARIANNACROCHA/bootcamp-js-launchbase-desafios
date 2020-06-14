@@ -20,15 +20,19 @@ const usuarios = [
     {nome: "Marina", tecnologias: ["HTML", "Node.js"]},
     ];
 
-function checaSeUsuarioUsaCSS() {
-    for (let i = 0; i < usuarios.length; i++)
-     {
-        if (usuarios.tecnologias == "CSS") {
-            return true;
-        } return false;       
-    } 
-}
 
-checaSeUsuarioUsaCSS();
- console.log(usuarios.length);
- console.log(usuarios);
+    function checaSeUsuarioUsaCSS(usuario) {
+        for (let tecnologia of usuario.tecnologias) {
+            if (tecnologia == 'CSS') return true;
+        }
+    
+        return false;
+    }
+    
+    for (let i = 0; i < usuarios.length; i++) {
+        const usuarioTrabalhaComCSS = checaSeUsuarioUsaCSS(usuarios[i]);
+    
+        if(usuarioTrabalhaComCSS) {
+            console.log(`O usuário ${usuarios[i].nome} trabalha com CSS`);
+        }
+    }
